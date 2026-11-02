@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# Local settings
+.env
+
+# Data (OEM manuals are copyrighted) - keep only the download manifest
+data/**
+!data/raw/
+!data/raw/manifest.json

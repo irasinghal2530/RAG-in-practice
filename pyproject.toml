@@ -1,0 +1,28 @@
+[project]
+name = "studyrag"
+version = "0.1.0"
+description = "RAG copilot for induction motors and drives: ingestion, Docling parsing and chunking pipeline"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "docling>=2.143.0",
+    "onnxruntime>=1.31.1",
+    "qdrant-client>=1.20.0",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.2.0",
+]
+
+[project.scripts]
+studyrag = "studyrag.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
