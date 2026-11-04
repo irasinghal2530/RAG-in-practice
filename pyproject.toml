@@ -26,3 +26,4 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["slow: runs Docling on a real PDF (deselect with -m 'not slow')"]

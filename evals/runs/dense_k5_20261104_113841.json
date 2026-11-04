@@ -1,0 +1,436 @@
+{
+  "purpose": "Human validation of expected answers against retrieved chunks",
+  "instructions": "For each question, compare expected_answer with retrieved_chunks[].text. Check whether the retrieved text supports the answer, not merely whether the source/page matches. Fill human_verdict with PASS, FAIL, or PARTIAL and add review_notes.",
+  "mode": "dense",
+  "k": 5,
+  "model": "BAAI/bge-small-en-v1.5",
+  "chunk_size": 512,
+  "chunks_indexed": 83,
+  "questions_file": "C:\\personal-projects\\StudyRag\\evals\\questions.jsonl",
+  "seconds": 3.12,
+  "summary": {
+    "overall": {
+      "n": 4,
+      "hit": 0.75,
+      "recall": 0.75,
+      "mrr": 0.625
+    },
+    "by_type": {
+      "numeric_spec": {
+        "n": 1,
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0
+      },
+      "procedure": {
+        "n": 1,
+        "hit": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0
+      },
+      "table_lookup": {
+        "n": 1,
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0
+      },
+      "vendor_specific": {
+        "n": 1,
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 0.5
+      }
+    },
+    "questions_loaded": 4,
+    "questions_scored": 4,
+    "questions_skipped": 0,
+    "questions_unanswerable": 0
+  },
+  "questions": [
+    {
+      "id": "q003",
+      "type": "table_lookup",
+      "category": "manuals",
+      "question": "Size of Equipment Ground Conductor (For IEC)?",
+      "expected_answer": {
+        "type": "table",
+        "columns": [
+          "phase_conductor",
+          "protective_conductor"
+        ],
+        "rows": [
+          {
+            "phase_conductor": "S ≤ 16 mm²",
+            "protective_conductor": "S"
+          },
+          {
+            "phase_conductor": "16 mm² < S ≤ 35 mm²",
+            "protective_conductor": "16 mm²"
+          },
+          {
+            "phase_conductor": "S > 35 mm²",
+            "protective_conductor": "S / 2"
+          }
+        ]
+      },
+      "expected_evidence": [
+        {
+          "source": "baldor_mn431_iom",
+          "pages": [
+            15
+          ],
+          "contains": "Cross sectional area of phase conductors, S"
+        }
+      ],
+      "retrieval_metrics": {
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "evidence_found_at": [
+          1
+        ]
+      },
+      "status": "evidence_found",
+      "gold_chunk_ids": [
+        [
+          "baldor_mn431_iom:40"
+        ]
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "baldor_mn431_iom:40",
+          "score": 0.812694,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            15
+          ],
+          "text": "For motors installed in compliance with IEC requirements, the following minimum cross sectional area of the protective conductors should be used:\nTable 2-2 Size of Equipment Ground Conductor (For IEC)\n\nCross sectional area of phase conductors, S, 1 = Minimum cross-sectional area of the corresponding protective conductor, S p. mm 2, 1 = mm 2. S < 16, 1 = S. 16 < S <35, 1 = 16. S>35, 1 = 0,5 S\nEquipotential bonding connection shall made using a conductor with a cross-sectional area of at least 4 mm 2 .\nThis equipment is at line voltage when AC power is connected. Disconnect and lockout all ungrounded conductors of the ac power line before proceeding. Failure to observe these precautions could result in severe bodily injury or loss of life.",
+          "matches_evidence": [
+            0
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "baldor_mn431_iom:38",
+          "score": 0.763532,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            14
+          ],
+          "text": "| - |\n| Table 2-1 Size of Equipment Ground Conductor (For USA and Canada) |\n| 15, Size.Copper Wire No. = 14. 15, Size.Aluminum or Copper Clad Aluminum Wire No.* = 12. 20, Size.Copper Wire No. = 12. 20, Size.Aluminum or Copper Clad Aluminum Wire No.* = 10. 30, Size.Copper Wire No. = 10. 30, Size.Aluminum or Copper Clad Aluminum Wire No.* = 8. 40, Size.Copper Wire No. = 10. 40, Size.Aluminum or Copper Clad Aluminum Wire No.* = 8. 60, Size.Copper Wire No. = 10. 60, Size.Aluminum or Copper Clad Aluminum Wire No.* = 8. 100, Size.Copper Wire No. = 8. 100, Size.Aluminum or Copper Clad Aluminum Wire No.* = 6. 200, Size.Copper Wire No. = 6. 200, Size.Aluminum or Copper Clad Aluminum Wire No.* = 4. 300, Size.Copper Wire No. = 4. 300, Size.Aluminum or Copper Clad Aluminum Wire No.* = 2. 400, Size.Copper Wire No. = 3. 400, Size.Aluminum or Copper Clad Aluminum Wire No.* = 1. 500, Size.Copper Wire No. = 2. 500, Size.Aluminum or Copper Clad Aluminum Wire No.* = 1/0. 600, Size.Copper Wire No. = 1. 600, Size.Aluminum or Copper Clad Aluminum Wire No.* = 2/0. 800, Size.Copper Wire No. = 0. 800, Size.Aluminum or Copper Clad Aluminum Wire No.* = 3/0. 1000, Size.Copper Wire No. = 2/0. 1000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 4/0. 1200, Size.Copper Wire No. = 3/0. 1200, Size.Aluminum or Copper Clad Aluminum Wire No.* = 250MCM. 1600, Size.Copper Wire No. = 4/0. 1600, Size.Aluminum or Copper Clad Aluminum Wire No.* = 350MCM. 2000, Size.Copper Wire No. = 250MCM. 2000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 400MCM. 2500, Size.Copper Wire No. =",
+          "matches_evidence": []
+        },
+        {
+          "rank": 3,
+          "chunk_id": "baldor_mn431_iom:37",
+          "score": 0.709776,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            14
+          ],
+          "text": "All large motors should be grounded with the grounding conductor equipped with a brazed copper terminal, or with a suitable solderless terminal fastened to the motor. Soldered terminals should not be used. A washer should be used between bolt head and terminal lug. The other end should be fastened with suitable clamps or terminals to rigid metallic conduit or to the nearest available ground.\nGround conductor size should be in accordance with the National Electrical Code Table 250--95 or Table 16 Part 1 of Canadian Electrical Code. (Table 2--1 in this section).\nAttachment to the motor should not be made under a flange mounting bolt.\nBe sure that the motor leads are connected as shown on the connection nameplate (when supplied on the motor) and that the power supply corresponds with the motor nameplate data (voltage, frequency and number of phases). The motor will operate, but with modified characteristics when the line voltage is within plus or minus 10%; the frequency within plus or minus 5% of the nameplate value; or combination of voltage and frequency within +10% of nameplate.\n",
+          "matches_evidence": []
+        },
+        {
+          "rank": 4,
+          "chunk_id": "baldor_mn431_iom:39",
+          "score": 0.703962,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            14
+          ],
+          "text": "| - |\n 350MCM. 2500, Size.Aluminum or Copper Clad Aluminum Wire No.* = 600MCM. 3000, Size.Copper Wire No. = 400MCM. 3000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 600MCM. 4000, Size.Copper Wire No. = 500MCM. 4000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 800MCM. 5000, Size.Copper Wire No. = 700MCM. 5000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 1200MCM. 6000, Size.Copper Wire No. = 800MCM. 6000, Size.Aluminum or Copper Clad Aluminum Wire No.* = 1200MCM |\n",
+          "matches_evidence": []
+        },
+        {
+          "rank": 5,
+          "chunk_id": "baldor_mn431_iom:6",
+          "score": 0.670588,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            3
+          ],
+          "text": "| - |\n . . . . . . . . . . . . . . . . . . . . . . . ., 1 = 4-1. IEC 60079 Series. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ., 1 = 4-1. Clause 30.1 (general). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ., 1 = 4-1. Clause 30.3 (electrical machines, 1 = . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  4-2. Appendix A, 1 = . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  Appendix A - 1. AC Motor Performance for EX Ragings Only (P40L77XX). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ., 1 = Appendix A - 1 |\n",
+          "matches_evidence": []
+        }
+      ],
+      "human_verdict": "PENDING",
+      "review_notes": ""
+    },
+    {
+      "id": "q010",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "What temperature and humidity limits does Baldor specify for storing motors?",
+      "expected_answer": "10 C (50 F) to 49 C (120 F), relative humidity no more than 60%, and shock or vibration under 2 mils at 60 Hz.",
+      "expected_evidence": [
+        {
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "contains": "Relative humidity must not exceed"
+        }
+      ],
+      "retrieval_metrics": {
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "evidence_found_at": [
+          1
+        ]
+      },
+      "status": "evidence_found",
+      "gold_chunk_ids": [
+        [
+          "baldor_mn431_iom:14"
+        ]
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "baldor_mn431_iom:14",
+          "score": 0.744388,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "1. Some motors have a shipping brace attached to the shaft to prevent damage during transportation. The shipping brace, if provided, must be removed and stored for future use. The brace must be reinstalled to hold the shaft firmly in place against the bearing before the motor is moved.\n2. Store in a clean, dry, protected warehouse where control is maintained as follows:\n- a. Shock or vibration must not exceed 2 mils maximum at 60 hertz, to prevent the bearings from brinelling. If shock or vibration exceeds this limit vibration isolation pads must be used.\n- b. Storage temperatures of 10°C (50°F) to 49°C (120°F) must be maintained.\n- c. Relative humidity must not exceed 60%.\n- d. Motor space heaters (when present) are to be connected and energized whenever there is a possibility that the storage ambient conditions will reach the dew point. Space heaters are optional.\nNote: Remove motor from containers when heaters are energized, re--protect if necessary.",
+          "matches_evidence": [
+            0
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "baldor_mn431_iom:15",
+          "score": 0.742844,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "3. Measure and record the resistance of the winding insulation (dielectric withstand) every 30 days of storage.\n- a. If motor insulation resistance decreases below the minimum resistance, contact your local Baldor District Office.\n- b. Place new desiccant inside the vapor bag and re--seal by taping it closed.\n- c. If a zipper--closing type bag is used instead of the heat--sealed type bag, zip the bag closed instead of taping it. Be sure to place new desiccant inside bag after each monthly inspection.\n- d. Place the shell over the motor and secure with lag bolts.\n4. Where motors are mounted to machinery, the mounting must be such that the drains and breathers are fully operable and are at the lowest point of the motor.\n5. Motors with anti-friction bearings are to be greased at the time of going into extended storage with periodic service. Ball and roller bearing (anti-friction) motor shafts are to be rotated manually every 3 months and greased every 6 months in accordance with the Maintenance section of this manual. The motor shaft must be rotated a minimum of 15 times after greasing.\n6. All drains are to be fully operable while in storage (drain plugs removed). The motors must be stored so that the drain is at the lowest point. All breathers and automatic \"T\" drains must be operable to allow breathing and draining at points other than through the bearings around the shaft.\n7. Coat all external machined surfaces with a rust preventing material. An acceptable product for this purpose is Exxon Rust Ban # 392 or an equivalent product may be used.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 3,
+          "chunk_id": "baldor_mn431_iom:46",
+          "score": 0.724617,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            16,
+            17
+          ],
+          "text": "Repeated starts and/or jogs can greatly reduce the life of an induction motor. If it is necessary to repeatedly start or jog a motor, check the application with your local Baldor District office.\nAt ambient temperature, the motor is normally capable of making two starts in succession and coasting to rest between starts.\nThe motor is also capable of making one start at its rated load operation temperature. For cooling time required before additional starts can be made consult your local Baldor District office or the motor starting nameplate if one is provided.\nIf more starts than defined above are attempted in shorter period of time, severe damage to the motor electrical windings and rotor may result.\nThe starting conditions listed above apply only if the inertia of the connected load, the load torque during acceleration, the applied voltage, and the starting method are those for which the motor was designed. For starting situations not covered here, consult your local Baldor District office before proceeding.\nRefer also to the motor nameplate which may list starting conditions.\nNote: Refer to Appendix A \"AC Motor Performance\" to locate Motor performance data and performance curve information.\nTable 2-3 Maximum Vibration Limits\n\nWarning, Amplitude on Bracket (in / second) = 0.2. Shutdown, Amplitude on Bracket (in / second) = 0.3\nFigure 2-1 Vibration Nomograph\nTable 2-4 Maximum Temperature Limits\n\nWarning, Bearing RTD (°C) = 110. Warning, Winding RTD (°C) = 185. Shutdown, Bearing RTD (°C) = 120. Shutdown, Winding RTD (°C) = 190",
+          "matches_evidence": []
+        },
+        {
+          "rank": 4,
+          "chunk_id": "baldor_mn431_iom:7",
+          "score": 0.719272,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            5
+          ],
+          "text": "Overview\nImportant:\nThis manual contains general procedures that apply to Baldor·Reliance Motor products. Be sure to read and understand the Safety Notice statements in this manual. For your protection, do not install, operate or attempt to perform maintenance procedures until you understand the Warning and Caution statements.\nA Warning statement indicates a possible unsafe condition that can cause harm to personnel.\nA Caution statement indicates a condition that can cause damage to equipment.\nBaldor·Reliance motors are sold to OEM(Original Equipment Manufacturers) companies who provide motors and equipment containing these motors as their product offerings. Be sure to consult the OEM documents for safety and regulatory information that is important to the application of these products. Motor designs included in the manual are as follows:\n1. Specs P40L65XX & P40L75XX / L4046 / 400 HP / Induction / Random Wound / VAR4\n2. Specs P40L76XX / L4046 / 400 HP / Induction / Form Wound / Rig Master XL\n3. Specs P40L77XX / L4070 / 562 HP / Interior Permanent Magnet (IPM) / Random Wound\nThis instruction manual is not intended to include a comprehensive listing of all details for all procedures required for installation, operation and maintenance. This manual describes general guidelines that apply to most of the motor products shipped by Baldor·Reliance. If you have a question about a procedure or are uncertain about any detail, Do Not Proceed. Please contact your local Baldor District Office for more information or clarification. Before you install, operate or perform maintenance, become familiar with the following:\n- NEMA Publication MG-2, Safety Standard for Construction and guide for Selection, Installation and Use of Electric Motors and Generators.\n- IEC 60034-1, IEC 60072-1.\n- ANSI C51.5, the National Electrical Code (NEC) and local codes and practices\nSafety Notice: This equipment contains high voltage! Electrical shock can cause serious or fatal injury.\nOnly qualified personnel should attempt installation, operation and maintenance of electrical equipment.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 5,
+          "chunk_id": "baldor_mn431_iom:13",
+          "score": 0.688976,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "Storage requirements for motors and generators that will not be placed in service for at least six months from date of shipment. Improper motor storage will result in seriously reduced reliability and failure. An electric motor that does not experience regular usage while being exposed to normally humid atmospheric conditions is likely to develop rust in the bearings or rust particles from surrounding surfaces may contaminate the bearings. The electrical insulation may absorb an excessive amount of moisture leading to the motor winding failure.\nA wooden crate \"shell\" should be constructed to secure the motor during storage. This is similar to an export box but the sides & top must be secured to the wooden base with lag bolts (not nailed as export boxes are) to allow opening and closing many times without damage to the \"shell\".\nMinimum resistance of motor winding insulation is 5 Meg ohms or the calculated minimum, which ever is greater. Minimum resistance is calculated as follows: Rm = kV + 1\nwhere: (Rm is minimum resistance to ground in Meg--Ohms and\nkV is rated nameplate voltage defined as Kilo--Volts.)\nExample: For a 480VAC rated motor Rm =1.48 meg--ohms (use 5 MΩ).\nFor a 4160VAC rated motor Rm = 5.16 meg--ohms.",
+          "matches_evidence": []
+        }
+      ],
+      "human_verdict": "PENDING",
+      "review_notes": ""
+    },
+    {
+      "id": "q011",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "How often should winding insulation resistance be measured on a Baldor motor in storage?",
+      "expected_answer": "Every 30 days of storage; if it falls below the minimum, contact the Baldor district office.",
+      "expected_evidence": [
+        {
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "contains": "every 30 days"
+        }
+      ],
+      "retrieval_metrics": {
+        "hit": 1.0,
+        "recall": 1.0,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "evidence_found_at": [
+          2
+        ]
+      },
+      "status": "evidence_found",
+      "gold_chunk_ids": [
+        [
+          "baldor_mn431_iom:15"
+        ]
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "baldor_mn431_iom:16",
+          "score": 0.822613,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "1. Remove all packing material.\n2. Rotate the motor shaft by hand to be sure there are no obstructions to free rotation.\n3. Measure and record the electrical resistance of the winding insulation resistance meter at the time of removal from storage. The insulation resistance must not be less than 50% from the initial reading recorded when the motor was placed into storage. A decrease in resistance indicates moisture in the windings and necessitates electrical or mechanical drying before the motor can be placed into service. If resistance is low, contact your local Baldor District Office.\n4. Regrease the bearings as instructed in Section 3 of this manual.\n5. Reinstall the original shipping brace if motor is to be moved. This will hold the shaft firmly against the bearing and prevent damage during movement.\n6. A motor with roller bearings is shipped with a shaft block. After removing the shaft block, be sure to replace any bolts used to hold the shaft block in place during shipment that are required in service.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 2,
+          "chunk_id": "baldor_mn431_iom:15",
+          "score": 0.818731,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "3. Measure and record the resistance of the winding insulation (dielectric withstand) every 30 days of storage.\n- a. If motor insulation resistance decreases below the minimum resistance, contact your local Baldor District Office.\n- b. Place new desiccant inside the vapor bag and re--seal by taping it closed.\n- c. If a zipper--closing type bag is used instead of the heat--sealed type bag, zip the bag closed instead of taping it. Be sure to place new desiccant inside bag after each monthly inspection.\n- d. Place the shell over the motor and secure with lag bolts.\n4. Where motors are mounted to machinery, the mounting must be such that the drains and breathers are fully operable and are at the lowest point of the motor.\n5. Motors with anti-friction bearings are to be greased at the time of going into extended storage with periodic service. Ball and roller bearing (anti-friction) motor shafts are to be rotated manually every 3 months and greased every 6 months in accordance with the Maintenance section of this manual. The motor shaft must be rotated a minimum of 15 times after greasing.\n6. All drains are to be fully operable while in storage (drain plugs removed). The motors must be stored so that the drain is at the lowest point. All breathers and automatic \"T\" drains must be operable to allow breathing and draining at points other than through the bearings around the shaft.\n7. Coat all external machined surfaces with a rust preventing material. An acceptable product for this purpose is Exxon Rust Ban # 392 or an equivalent product may be used.",
+          "matches_evidence": [
+            0
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "baldor_mn431_iom:20",
+          "score": 0.789212,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            10
+          ],
+          "text": "The insulation resistance measurement is performed by applying a DC voltage to the stator winding and measuring the resistance between the winding and ground. The test guidelines are:\n<1000, Recommended DC Test Voltage = 500. 1001 - 2500, Recommended DC Test Voltage = 500 - 1000\nFor insulation in good condition and in a dry state, the insulation resistance will be essentially the same for a test voltage of 500 VDC or 1000 VDC. A significant decrease in the insulation resistance when an increased voltage is applied may be an indication of insulation problems.\nThe measured insulation resistance of a motor winding will normally increase the longer the DC voltage is applied.\nThe increase will usually be rapid when the potential is first applied, and the readings gradually approach a fairly constant value as time elapses. The measured insulation resistance of a dry winding in good condition may continue to increase for hours with constant test potential continuously applied; however, a fairly steady value is usually reached in 10 to 15 minutes. If the winding is wet or dirty, the steady value will usually be reached in one or two minutes after the test potential is applied. The slope of the curve is an indication of insulation condition. The polarization index is the ratio of the 10 minute resistance value to the 1 minute resistance value. The polarization index is indicative of the slope of the characteristic curve (resistance on the y axis versus time on the x axis using a y - log and x- log scale). The polarization index may be useful in the appraisal of the winding for dryness and for fitness for over-potential test. The 1 minute insulation resistance is useful for evaluating insulation condition where comparisons are to be made with earlier and later data, similarly obtained. Insulation resistance measurements are affected by several factors including surface condition, moisture, temperature, magnitude of test direct potential, duration of the application of test direct potential and residual charge in the winding.\nInsulation resistance of a winding is not directly related to its dielectric strength. It is impossible to specify the value of insulation resistance at which a winding will fail electrically.\nIf the polarization index is reduced because of dirt or excessive moisture, it can be brought up to proper value by cleaning and drying to remove moisture.\nThe IEEE recommended minimum value of polarization index for Class B, F and H motors is 2.0.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 4,
+          "chunk_id": "baldor_mn431_iom:19",
+          "score": 0.785621,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            10
+          ],
+          "text": "The motors insulation system must be kept in good condition to achieve proper motor life. A clean and dry insulation system maintained within the thermal limitations according to the insulation class will provide proper motor life. When motors are being used in harsh environments, moisture and contamination are being introduced into the motor winding, maintenance must be routinely performed to keep the inside of the motor clean and dry. Insulation resistance measurement evaluates the condition of the electrical insulation. Periodic measurements should be taken and test results should be kept to analyze trends to especially determine if a significant decrease in the insulation resistance has occurred. Testing should be performed according to the latest revision of IEEE 43. This document provides detailed guidelines for performing the test and how to analyze the results.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 5,
+          "chunk_id": "baldor_mn431_iom:13",
+          "score": 0.778917,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            7
+          ],
+          "text": "Storage requirements for motors and generators that will not be placed in service for at least six months from date of shipment. Improper motor storage will result in seriously reduced reliability and failure. An electric motor that does not experience regular usage while being exposed to normally humid atmospheric conditions is likely to develop rust in the bearings or rust particles from surrounding surfaces may contaminate the bearings. The electrical insulation may absorb an excessive amount of moisture leading to the motor winding failure.\nA wooden crate \"shell\" should be constructed to secure the motor during storage. This is similar to an export box but the sides & top must be secured to the wooden base with lag bolts (not nailed as export boxes are) to allow opening and closing many times without damage to the \"shell\".\nMinimum resistance of motor winding insulation is 5 Meg ohms or the calculated minimum, which ever is greater. Minimum resistance is calculated as follows: Rm = kV + 1\nwhere: (Rm is minimum resistance to ground in Meg--Ohms and\nkV is rated nameplate voltage defined as Kilo--Volts.)\nExample: For a 480VAC rated motor Rm =1.48 meg--ohms (use 5 MΩ).\nFor a 4160VAC rated motor Rm = 5.16 meg--ohms.",
+          "matches_evidence": []
+        }
+      ],
+      "human_verdict": "PENDING",
+      "review_notes": ""
+    },
+    {
+      "id": "q022",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "Should a high potential insulation test be done with the motor still connected to its drive?",
+      "expected_answer": "No, disconnect the motor from any speed control or drive first to avoid damaging it.",
+      "expected_evidence": [
+        {
+          "source": "baldor_mn431_iom",
+          "pages": [
+            6
+          ],
+          "contains": "High Potential"
+        }
+      ],
+      "retrieval_metrics": {
+        "hit": 0.0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "first_relevant_rank": null,
+        "evidence_found_at": []
+      },
+      "status": "evidence_not_found_in_top_k",
+      "gold_chunk_ids": [
+        [
+          "baldor_mn431_iom:11"
+        ]
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "baldor_mn431_iom:19",
+          "score": 0.766395,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            10
+          ],
+          "text": "The motors insulation system must be kept in good condition to achieve proper motor life. A clean and dry insulation system maintained within the thermal limitations according to the insulation class will provide proper motor life. When motors are being used in harsh environments, moisture and contamination are being introduced into the motor winding, maintenance must be routinely performed to keep the inside of the motor clean and dry. Insulation resistance measurement evaluates the condition of the electrical insulation. Periodic measurements should be taken and test results should be kept to analyze trends to especially determine if a significant decrease in the insulation resistance has occurred. Testing should be performed according to the latest revision of IEEE 43. This document provides detailed guidelines for performing the test and how to analyze the results.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 2,
+          "chunk_id": "baldor_mn431_iom:21",
+          "score": 0.755898,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            10
+          ],
+          "text": "1. Discharge the winding by grounding the motor power leads.\n2. It has been proven that the internal terminal block used for some of the NOV topdrive motors can have a significant negative impact on the insulation resistance. Therefore, it is recommended that the motor power leads be removed from the terminal block before performing the insulation resistance test.\n3. In any case, the readings must be taken in the same manner each time to be able to compare results.\n3. The winding temperature must be known.\n4. Apply voltage to the winding without interruption for 10 minutes. Record the insulation resistance value after voltage has been applied for 1 minute and then at the 10 minute mark. Do not take a measurement at less than 1 minute.\n5. Insulation test values should be corrected to a common base temperature of 40 o C.\nThe correction may be made as follows:",
+          "matches_evidence": []
+        },
+        {
+          "rank": 3,
+          "chunk_id": "baldor_mn431_iom:24",
+          "score": 0.742357,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            11
+          ],
+          "text": "1. Inspect the motor at regular intervals, approximately every 500 hours of operation or every 3 months. If the environment is abnormally harsh with a potential for excessive contamination, the interval period may need to be less. Keep the motor clean and the ventilation openings clear.\n2. If the motor is not properly ventilated, overheating can occur and cause early motor failure.\n2. Examine exterior of motor for defects, cracks, contamination and any other condition that is different from the condition of the motor as originally shipped. Pay particular attention to grease fittings, grease drains, end rings, and condensate drain holes. Record findings and take pictures.\n3. Access motor leads and perform 500 VDC dielectric withstand test (insulation test). Record readings at 1 minute and 10 minutes to calculate polarization index.\n4. Analyze the insulation resistance readings to determine if the motor needs to be removed from service for maintenance. It is recommended to remove the motor from service and perform maintenance on the motor if the 1 minute reading is less than 5 MΩ when corrected to 40 °C or if the polarization index is less than 2.0 or if there is a significant decrease in the values when compared to previous tests.\n5. If the motor is removed from service for maintenance, measure the shaft extension for total indicator run out and record any damage to the shaft taper that may exist before disassembly of the motor. Record measurements. Take pictures if necessary.\n6. Once the motor is disassembled, thoroughly examine all parts of the motor for obvious defects or damage. Examine bearings, bearing cavities, shaft bearing journals, seals, bracket drain holes, stator winding, rotor, shaft, motor leads, terminal strip, and stator core. Measure shaft bearing journals and bracket bearing cavities and record measurements. Compare to part drawings. Examine grease for contamination. Record findings and take pictures.\n7. If the winding and/or core are contaminated, pressure cleaning may be required. Visual inspection and the insulation resistance test results will help determine if cleaning is required.\n8. If the insulation resistance is low but a visual inspection does not reveal heavy contamination, moisture may be the problem. The stator core and winding may be dried in an oven at 250 °F - 275 °F for seven hours.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 4,
+          "chunk_id": "baldor_mn431_iom:20",
+          "score": 0.725946,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            10
+          ],
+          "text": "The insulation resistance measurement is performed by applying a DC voltage to the stator winding and measuring the resistance between the winding and ground. The test guidelines are:\n<1000, Recommended DC Test Voltage = 500. 1001 - 2500, Recommended DC Test Voltage = 500 - 1000\nFor insulation in good condition and in a dry state, the insulation resistance will be essentially the same for a test voltage of 500 VDC or 1000 VDC. A significant decrease in the insulation resistance when an increased voltage is applied may be an indication of insulation problems.\nThe measured insulation resistance of a motor winding will normally increase the longer the DC voltage is applied.\nThe increase will usually be rapid when the potential is first applied, and the readings gradually approach a fairly constant value as time elapses. The measured insulation resistance of a dry winding in good condition may continue to increase for hours with constant test potential continuously applied; however, a fairly steady value is usually reached in 10 to 15 minutes. If the winding is wet or dirty, the steady value will usually be reached in one or two minutes after the test potential is applied. The slope of the curve is an indication of insulation condition. The polarization index is the ratio of the 10 minute resistance value to the 1 minute resistance value. The polarization index is indicative of the slope of the characteristic curve (resistance on the y axis versus time on the x axis using a y - log and x- log scale). The polarization index may be useful in the appraisal of the winding for dryness and for fitness for over-potential test. The 1 minute insulation resistance is useful for evaluating insulation condition where comparisons are to be made with earlier and later data, similarly obtained. Insulation resistance measurements are affected by several factors including surface condition, moisture, temperature, magnitude of test direct potential, duration of the application of test direct potential and residual charge in the winding.\nInsulation resistance of a winding is not directly related to its dielectric strength. It is impossible to specify the value of insulation resistance at which a winding will fail electrically.\nIf the polarization index is reduced because of dirt or excessive moisture, it can be brought up to proper value by cleaning and drying to remove moisture.\nThe IEEE recommended minimum value of polarization index for Class B, F and H motors is 2.0.",
+          "matches_evidence": []
+        },
+        {
+          "rank": 5,
+          "chunk_id": "baldor_mn431_iom:26",
+          "score": 0.725858,
+          "source": "baldor_mn431_iom",
+          "pages": [
+            11
+          ],
+          "text": "10. Perform an insulation resistance test on the cleaned, dried, and repaired stator to obtain the 1 minute and 10 minute values to validate the repairs. Record the values for future comparison with values obtained in the field.\n11. Since the motor has been disassembled, the bearings and all seals should be replaced at this time. The brackets and bearing caps should be washed to remove all grease and contamination.",
+          "matches_evidence": []
+        }
+      ],
+      "human_verdict": "PENDING",
+      "review_notes": ""
+    }
+  ]
+}

@@ -17,3 +17,10 @@ wheels/
 data/**
 !data/raw/
 !data/raw/manifest.json
+
+
+# Word lock files
+~$*
+
+# run logs
+logs/

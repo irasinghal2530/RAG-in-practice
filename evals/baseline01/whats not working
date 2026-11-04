@@ -1,0 +1,9 @@
+model: bge-small-en-v1.5
+dense only, k = 6
+chunking as it is now
+
+Chunks are the wrong size
+
+Too small: chunks like “HYOSUNG”, “WARNING: WARNING:”, and copyright lines win searches even though they carry no useful content.
+Too big: in the Toshiba megohm question, the answer is one sentence buried in a long chunk about storage, so the system misses it.
+Duplicates: the same sentence is stored twice and takes up two of your six result slots.

@@ -1,0 +1,3940 @@
+{
+  "k": 10,
+  "questions_loaded": 57,
+  "questions_scored": 33,
+  "questions_skipped": 19,
+  "questions_unanswerable": 5,
+  "overall": {
+    "n": 33,
+    "hit": 0.8485,
+    "recall": 0.8152,
+    "mrr": 0.6472,
+    "ndcg": 0.6694
+  },
+  "by_type": {
+    "colloquial": {
+      "n": 2,
+      "hit": 0.5,
+      "recall": 0.5,
+      "mrr": 0.0625,
+      "ndcg": 0.1577
+    },
+    "cross_source": {
+      "n": 1,
+      "hit": 1.0,
+      "recall": 0.4,
+      "mrr": 1.0,
+      "ndcg": 0.4704
+    },
+    "definition": {
+      "n": 5,
+      "hit": 0.6,
+      "recall": 0.6,
+      "mrr": 0.4,
+      "ndcg": 0.4524
+    },
+    "numeric_spec": {
+      "n": 11,
+      "hit": 0.9091,
+      "recall": 0.9091,
+      "mrr": 0.6394,
+      "ndcg": 0.7072
+    },
+    "procedure": {
+      "n": 7,
+      "hit": 1.0,
+      "recall": 0.9286,
+      "mrr": 0.8571,
+      "ndcg": 0.8393
+    },
+    "table_lookup": {
+      "n": 2,
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.6,
+      "ndcg": 0.6934
+    },
+    "vendor_specific": {
+      "n": 5,
+      "hit": 0.8,
+      "recall": 0.8,
+      "mrr": 0.8,
+      "ndcg": 0.8
+    }
+  },
+  "by_category": {
+    "manuals": {
+      "n": 24,
+      "hit": 0.9167,
+      "recall": 0.8708,
+      "mrr": 0.6885,
+      "ndcg": 0.7066
+    },
+    "standards": {
+      "n": 9,
+      "hit": 0.6667,
+      "recall": 0.6667,
+      "mrr": 0.537,
+      "ndcg": 0.5701
+    }
+  },
+  "top1_score": {
+    "answerable_mean": 0.8112,
+    "unanswerable_mean": 0.6802,
+    "unanswerable_max": 0.753692
+  },
+  "skipped_not_indexed": [
+    {
+      "id": "q034",
+      "missing_sources": [
+        "weg_t_line_induction_motor_iom"
+      ]
+    },
+    {
+      "id": "q035",
+      "missing_sources": [
+        "weg_t_line_induction_motor_iom"
+      ]
+    },
+    {
+      "id": "q036",
+      "missing_sources": [
+        "doe_determining_motor_load_and_efficiency"
+      ]
+    },
+    {
+      "id": "q037",
+      "missing_sources": [
+        "doe_determining_motor_load_and_efficiency"
+      ]
+    },
+    {
+      "id": "q038",
+      "missing_sources": [
+        "doe_motor_drive_sourcebook_2008_tip_sheets"
+      ]
+    },
+    {
+      "id": "q039",
+      "missing_sources": [
+        "doe_premium_efficiency_motor_handbook"
+      ]
+    },
+    {
+      "id": "q040",
+      "missing_sources": [
+        "easa_aemt_rewind_study",
+        "easa_aemt_rewind_study"
+      ]
+    },
+    {
+      "id": "q041",
+      "missing_sources": [
+        "bee_book3_checklists_tips"
+      ]
+    },
+    {
+      "id": "q042",
+      "missing_sources": [
+        "easa_aemt_rewind_study",
+        "bee_book3_checklists_tips"
+      ]
+    },
+    {
+      "id": "q043",
+      "missing_sources": [
+        "bee_book3_checklists_tips"
+      ]
+    },
+    {
+      "id": "q044",
+      "missing_sources": [
+        "iea_4e_emsa_motor_system_audit_guide"
+      ]
+    },
+    {
+      "id": "q045",
+      "missing_sources": [
+        "abb_acs580_firmware_manual"
+      ]
+    },
+    {
+      "id": "q046",
+      "missing_sources": [
+        "abb_acs580_firmware_manual"
+      ]
+    },
+    {
+      "id": "q047",
+      "missing_sources": [
+        "siemens_g120_cu240be2_operating_instructions"
+      ]
+    },
+    {
+      "id": "q048",
+      "missing_sources": [
+        "siemens_g120_cu240be2_operating_instructions"
+      ]
+    },
+    {
+      "id": "q049",
+      "missing_sources": [
+        "broken_rotor_bar_mcsa_survey"
+      ]
+    },
+    {
+      "id": "q050",
+      "missing_sources": [
+        "rotating_machinery_dl_benchmark_arxiv_2003.03315",
+        "multi_fault_rotating_machines_review_arxiv_2206.14153"
+      ]
+    },
+    {
+      "id": "q051",
+      "missing_sources": [
+        "mafaulda_cwru_kan_arxiv_2412.01322"
+      ]
+    },
+    {
+      "id": "q052",
+      "missing_sources": [
+        "jodhpur_limestone_cluster_manual"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "What are the transportation and storage guidelines for ABB motors?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#7",
+          "score": 0.814275,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#14",
+          "score": 0.810428,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#5",
+          "score": 0.763744,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#49",
+          "score": 0.757329,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#50",
+          "score": 0.746645,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#55",
+          "score": 0.746023,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#15",
+          "score": 0.74185,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#1",
+          "score": 0.737415,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#118",
+          "score": 0.736125,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#8",
+          "score": 0.735882,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q002",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "What is the general warning with respect to lubricants containing EP admixtures?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#115",
+          "score": 0.846115,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#115",
+          "score": 0.783786,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#114",
+          "score": 0.764869,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#56",
+          "score": 0.692624,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#82",
+          "score": 0.691441,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#116",
+          "score": 0.670068,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#163",
+          "score": 0.65363,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            37
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#103",
+          "score": 0.651966,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#165",
+          "score": 0.650263,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            37
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#98",
+          "score": 0.649348,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q003",
+      "type": "table_lookup",
+      "category": "manuals",
+      "question": "Size of Equipment Ground Conductor (For IEC)?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/baldor_mn431_iom#61",
+          "score": 0.804405,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/baldor_mn431_iom#57",
+          "score": 0.777661,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/baldor_mn431_iom#58",
+          "score": 0.717022,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#47",
+          "score": 0.711797,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/baldor_mn431_iom#59",
+          "score": 0.711564,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#32",
+          "score": 0.710592,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            9
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#36",
+          "score": 0.709331,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            9
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/baldor_mn431_iom#60",
+          "score": 0.707942,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#102",
+          "score": 0.700556,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/baldor_mn431_iom#55",
+          "score": 0.700293,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q004",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "What minimum megohmmeter reading does Toshiba recommend before applying power to a stored motor?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#66",
+          "score": 0.766641,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#27",
+          "score": 0.757158,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#121",
+          "score": 0.741952,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            39
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#59",
+          "score": 0.737977,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#132",
+          "score": 0.728565,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            42,
+            44
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#65",
+          "score": 0.727483,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#0",
+          "score": 0.72546,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/baldor_mn431_iom#17",
+          "score": 0.723407,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#31",
+          "score": 0.721723,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#2",
+          "score": 0.719059,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q005",
+      "type": "colloquial",
+      "category": "manuals",
+      "question": "can I just mix whatever grease I have in the store when greasing the motor bearings?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.125,
+      "ndcg": 0.31546487678572877,
+      "first_relevant_rank": 8,
+      "evidence_found_at": [
+        8
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#114",
+          "score": 0.757084,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#87",
+          "score": 0.756629,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            30
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#97",
+          "score": 0.752803,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#113",
+          "score": 0.742366,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#57",
+          "score": 0.738515,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#96",
+          "score": 0.733362,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#280",
+          "score": 0.727653,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            77
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#225",
+          "score": 0.725663,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            61
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#281",
+          "score": 0.721874,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            77
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#151",
+          "score": 0.721544,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q006",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "What minimum insulation resistance does ABB require for low voltage motors, and at what reference temperature?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.856602,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.848244,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#66",
+          "score": 0.830376,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#37",
+          "score": 0.827359,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#59",
+          "score": 0.816208,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#5",
+          "score": 0.814349,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#30",
+          "score": 0.81114,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#36",
+          "score": 0.808128,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#27",
+          "score": 0.805767,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#58",
+          "score": 0.803702,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q007",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "How should a damp ABB motor winding be oven dried when the insulation resistance is too low?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#18",
+          "score": 0.865792,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.854182,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.824702,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#193",
+          "score": 0.821753,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            54,
+            55
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#73",
+          "score": 0.820515,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#74",
+          "score": 0.806963,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#67",
+          "score": 0.802914,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#75",
+          "score": 0.800636,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#115",
+          "score": 0.799563,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#77",
+          "score": 0.798128,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q008",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "How often should insulation resistance be tested on a Brook Crompton motor in extended storage, and what value should be maintained?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#32",
+          "score": 0.833824,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#0",
+          "score": 0.796586,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            1,
+            3
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#28",
+          "score": 0.794029,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#24",
+          "score": 0.763901,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#22",
+          "score": 0.762395,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.755296,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/baldor_mn431_iom#16",
+          "score": 0.75144,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.750473,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#36",
+          "score": 0.749483,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#115",
+          "score": 0.748394,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q009",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "What insulation resistance is typically sufficient for a Hyosung low-voltage motor stator winding, and at what winding temperature?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#36",
+          "score": 0.84866,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#27",
+          "score": 0.827146,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#185",
+          "score": 0.810113,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            42
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#205",
+          "score": 0.806849,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            48
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#32",
+          "score": 0.80353,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#35",
+          "score": 0.800986,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#31",
+          "score": 0.80031,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#33",
+          "score": 0.799185,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#30",
+          "score": 0.79172,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#34",
+          "score": 0.783955,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q010",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "What temperature and humidity limits does Baldor specify for storing motors?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/baldor_mn431_iom#19",
+          "score": 0.833602,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/baldor_mn431_iom#20",
+          "score": 0.774287,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#262",
+          "score": 0.761897,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            73
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/baldor_mn431_iom#17",
+          "score": 0.761504,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/baldor_mn431_iom#45",
+          "score": 0.747936,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#5",
+          "score": 0.74164,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#263",
+          "score": 0.740052,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            73
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#19",
+          "score": 0.739511,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/baldor_mn431_iom#15",
+          "score": 0.73929,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#7",
+          "score": 0.732049,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q011",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "How often should winding insulation resistance be measured on a Baldor motor in storage?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/baldor_mn431_iom#20",
+          "score": 0.882157,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/baldor_mn431_iom#22",
+          "score": 0.870561,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/baldor_mn431_iom#28",
+          "score": 0.839307,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/baldor_mn431_iom#16",
+          "score": 0.832951,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#24",
+          "score": 0.824166,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#27",
+          "score": 0.81454,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#22",
+          "score": 0.803495,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/baldor_mn431_iom#44",
+          "score": 0.801694,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#26",
+          "score": 0.798824,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/baldor_mn431_iom#31",
+          "score": 0.795204,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q012",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "What checks should be done before starting a Toshiba low voltage motor for the first time?",
+      "hit": 1.0,
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        null,
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#58",
+          "score": 0.866273,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#59",
+          "score": 0.840439,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#1",
+          "score": 0.782777,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#125",
+          "score": 0.781368,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            40
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#128",
+          "score": 0.779174,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            41
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#60",
+          "score": 0.778548,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#24",
+          "score": 0.765303,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#0",
+          "score": 0.764898,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#67",
+          "score": 0.76249,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#121",
+          "score": 0.755543,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q013",
+      "type": "table_lookup",
+      "category": "manuals",
+      "question": "What is the maximum surface temperature allowed for temperature class T4 motors in explosive atmospheres?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.2,
+      "ndcg": 0.38685280723454163,
+      "first_relevant_rank": 5,
+      "evidence_found_at": [
+        5
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#48",
+          "score": 0.781164,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#53",
+          "score": 0.772345,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#11",
+          "score": 0.761741,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#56",
+          "score": 0.75685,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#12",
+          "score": 0.756114,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#30",
+          "score": 0.753854,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#5",
+          "score": 0.708261,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#21",
+          "score": 0.699114,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/baldor_mn431_iom#27",
+          "score": 0.698523,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#12",
+          "score": 0.697867,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q014",
+      "type": "definition",
+      "category": "manuals",
+      "question": "Which ABB motor series are covered for flameproof enclosure Ex d and Ex de?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#53",
+          "score": 0.788724,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#4",
+          "score": 0.777061,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#42",
+          "score": 0.753239,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#56",
+          "score": 0.744984,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#60",
+          "score": 0.737982,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#8",
+          "score": 0.730727,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#7",
+          "score": 0.724374,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#6",
+          "score": 0.723781,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#57",
+          "score": 0.723678,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#54",
+          "score": 0.722533,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q015",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "Why must the axial force never change direction on Ex d motors with angular contact bearings?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#22",
+          "score": 0.870384,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#16",
+          "score": 0.796834,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#15",
+          "score": 0.794288,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#74",
+          "score": 0.737014,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#71",
+          "score": 0.721942,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#75",
+          "score": 0.709367,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#30",
+          "score": 0.696633,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#255",
+          "score": 0.687986,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            70
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#46",
+          "score": 0.687274,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#28",
+          "score": 0.685787,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q016",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "How do I avoid bearing currents when running an ABB motor from an ACS800 frequency converter?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        2,
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#65",
+          "score": 0.88889,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#39",
+          "score": 0.874712,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#40",
+          "score": 0.826253,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#64",
+          "score": 0.801999,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#41",
+          "score": 0.775468,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#55",
+          "score": 0.762088,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#7",
+          "score": 0.759427,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#33",
+          "score": 0.757979,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#119",
+          "score": 0.757829,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#48",
+          "score": 0.757387,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q017",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "How much grease per lubrication interval should be used when an ABB Ex motor has an automatic regreasing system?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#90",
+          "score": 0.875175,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#65",
+          "score": 0.867751,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#89",
+          "score": 0.827214,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#88",
+          "score": 0.819488,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#66",
+          "score": 0.813595,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#64",
+          "score": 0.810006,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#117",
+          "score": 0.799113,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#63",
+          "score": 0.796311,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#83",
+          "score": 0.793955,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#67",
+          "score": 0.788938,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q018",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "Can two different greases be mixed when relubricating a Siemens horizontal induction motor?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#225",
+          "score": 0.895917,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            61
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#129",
+          "score": 0.809727,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            39,
+            40
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#280",
+          "score": 0.804219,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            77
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#224",
+          "score": 0.7916,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            61
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#157",
+          "score": 0.776884,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            46
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#234",
+          "score": 0.771411,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            62
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#39",
+          "score": 0.771104,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#97",
+          "score": 0.768523,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#272",
+          "score": 0.76813,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            75
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#235",
+          "score": 0.768013,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q019",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "Roughly how heavy should the foundation be for a Siemens horizontal motor?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#48",
+          "score": 0.792981,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#45",
+          "score": 0.768198,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#44",
+          "score": 0.764606,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#54",
+          "score": 0.744283,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            20
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#318",
+          "score": 0.744224,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            90,
+            92
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#59",
+          "score": 0.741611,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            21
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#43",
+          "score": 0.740564,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#61",
+          "score": 0.731796,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            21
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#49",
+          "score": 0.727321,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            19
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#47",
+          "score": 0.722959,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q020",
+      "type": "numeric_spec",
+      "category": "manuals",
+      "question": "How many starts are allowed for a Hyosung NEMA low voltage motor?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.2,
+      "ndcg": 0.38685280723454163,
+      "first_relevant_rank": 5,
+      "evidence_found_at": [
+        5
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#192",
+          "score": 0.786598,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            46
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#100",
+          "score": 0.766856,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            27
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#107",
+          "score": 0.757137,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            29
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#82",
+          "score": 0.751486,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            20
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#112",
+          "score": 0.749574,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            30
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#97",
+          "score": 0.742586,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            26,
+            27
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#110",
+          "score": 0.740448,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            29
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#6",
+          "score": 0.739596,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#114",
+          "score": 0.736562,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            30
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#109",
+          "score": 0.733342,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q021",
+      "type": "vendor_specific",
+      "category": "manuals",
+      "question": "Where are Brook Crompton relubrication intervals given, and what do they mean for motors without grease nipples?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "first_relevant_rank": null,
+      "evidence_found_at": [
+        null
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#39",
+          "score": 0.746559,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#207",
+          "score": 0.734657,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#0",
+          "score": 0.728056,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            1,
+            3
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#126",
+          "score": 0.723871,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#198",
+          "score": 0.718486,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#62",
+          "score": 0.717094,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#158",
+          "score": 0.715944,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#157",
+          "score": 0.714421,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#193",
+          "score": 0.713149,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#125",
+          "score": 0.713022,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q022",
+      "type": "procedure",
+      "category": "manuals",
+      "question": "Should a high potential insulation test be done with the motor still connected to its drive?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/baldor_mn431_iom#12",
+          "score": 0.804528,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#109",
+          "score": 0.778997,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            36,
+            37
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#65",
+          "score": 0.771726,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/baldor_mn431_iom#28",
+          "score": 0.765231,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/baldor_mn431_iom#32",
+          "score": 0.752836,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#67",
+          "score": 0.74926,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#26",
+          "score": 0.748868,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#27",
+          "score": 0.744848,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.743504,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.732842,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q023",
+      "type": "numeric_spec",
+      "category": "standards",
+      "question": "By how much can the supply voltage and frequency vary while a motor must still deliver rated output under IS 325?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5,
+      "first_relevant_rank": 3,
+      "evidence_found_at": [
+        3
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#45",
+          "score": 0.800632,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#13",
+          "score": 0.786359,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#22",
+          "score": 0.781943,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#27",
+          "score": 0.774814,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            10,
+            11
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#28",
+          "score": 0.762273,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#26",
+          "score": 0.75036,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#25",
+          "score": 0.742619,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#69",
+          "score": 0.736372,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#53",
+          "score": 0.733704,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#17",
+          "score": 0.73311,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q024",
+      "type": "definition",
+      "category": "standards",
+      "question": "When is a three-phase supply considered a virtually balanced voltage system in IS 325?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "first_relevant_rank": 2,
+      "evidence_found_at": [
+        2
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#17",
+          "score": 0.734309,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            9
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#19",
+          "score": 0.732719,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#5",
+          "score": 0.71436,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#75",
+          "score": 0.7113,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#51",
+          "score": 0.707437,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#81",
+          "score": 0.702882,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            20
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#73",
+          "score": 0.698047,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#0",
+          "score": 0.697792,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#76",
+          "score": 0.697225,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            19
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#69",
+          "score": 0.696902,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q025",
+      "type": "numeric_spec",
+      "category": "standards",
+      "question": "Below what insulation resistance must a motor be dried out before applying full voltage according to IS 900?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#72",
+          "score": 0.885943,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#76",
+          "score": 0.864998,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#73",
+          "score": 0.856886,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#77",
+          "score": 0.848123,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#74",
+          "score": 0.839718,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#75",
+          "score": 0.829686,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#115",
+          "score": 0.824044,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#71",
+          "score": 0.813468,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#67",
+          "score": 0.80315,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.801746,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q026",
+      "type": "numeric_spec",
+      "category": "standards",
+      "question": "What is the maximum safe winding temperature while drying out a motor?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#75",
+          "score": 0.863194,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#73",
+          "score": 0.836152,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#18",
+          "score": 0.822324,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#74",
+          "score": 0.817282,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#69",
+          "score": 0.814738,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            25
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.79877,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.797875,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#76",
+          "score": 0.792059,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#70",
+          "score": 0.79191,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            25
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#72",
+          "score": 0.786621,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q027",
+      "type": "procedure",
+      "category": "standards",
+      "question": "How should motors be stored before installation according to IS 900?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#56",
+          "score": 0.792124,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#23",
+          "score": 0.763918,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/baldor_mn431_iom#15",
+          "score": 0.76203,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#258",
+          "score": 0.761297,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            72
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#105",
+          "score": 0.761065,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#7",
+          "score": 0.759757,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#28",
+          "score": 0.758207,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            4
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#27",
+          "score": 0.757498,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/baldor_mn431_iom#18",
+          "score": 0.757358,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#59",
+          "score": 0.756071,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q028",
+      "type": "definition",
+      "category": "standards",
+      "question": "Which IEC standard was IS 12615:2011 aligned with for motor efficiency classes?",
+      "hit": 1.0,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#1",
+          "score": 0.80933,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#144",
+          "score": 0.772596,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#0",
+          "score": 0.739043,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#6",
+          "score": 0.736023,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#4",
+          "score": 0.731789,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#143",
+          "score": 0.730794,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#98",
+          "score": 0.725359,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#5",
+          "score": 0.724492,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#10",
+          "score": 0.717187,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#3",
+          "score": 0.714254,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q029",
+      "type": "definition",
+      "category": "standards",
+      "question": "Which motors are excluded from the scope of IS 12615?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "first_relevant_rank": null,
+      "evidence_found_at": [
+        null
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#1",
+          "score": 0.674262,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#144",
+          "score": 0.673537,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#98",
+          "score": 0.667164,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#147",
+          "score": 0.660566,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#42",
+          "score": 0.659016,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#68",
+          "score": 0.650603,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#146",
+          "score": 0.649374,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            15
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#6",
+          "score": 0.647563,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#6",
+          "score": 0.647263,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_325_1996_three_phase_induction_motors#3",
+          "score": 0.647228,
+          "source": "is_325_1996_three_phase_induction_motors.pdf",
+          "pages": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q030",
+      "type": "numeric_spec",
+      "category": "standards",
+      "question": "How is full load current determined under IS 12615, and how does it change for a motor not rated at 415 V?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "first_relevant_rank": null,
+      "evidence_found_at": [
+        null
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#42",
+          "score": 0.779498,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#98",
+          "score": 0.772179,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#128",
+          "score": 0.764684,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#53",
+          "score": 0.763912,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#100",
+          "score": 0.763888,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#67",
+          "score": 0.760058,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#136",
+          "score": 0.75844,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#139",
+          "score": 0.752009,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            12
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#82",
+          "score": 0.75182,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#122",
+          "score": 0.751499,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q031",
+      "type": "definition",
+      "category": "standards",
+      "question": "What range of voltage and motor output does IS 900 cover?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "first_relevant_rank": null,
+      "evidence_found_at": [
+        null
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#104",
+          "score": 0.715519,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#13",
+          "score": 0.710235,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#72",
+          "score": 0.70362,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#187",
+          "score": 0.702398,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            29
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#111",
+          "score": 0.698508,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            17
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#184",
+          "score": 0.694874,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            27
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#178",
+          "score": 0.694601,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            25
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#45",
+          "score": 0.694158,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#71",
+          "score": 0.693071,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#177",
+          "score": 0.688437,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q032",
+      "type": "cross_source",
+      "category": "manuals",
+      "question": "What minimum insulation resistance do different motor manufacturers and IS 900 recommend before energising a motor?",
+      "hit": 1.0,
+      "recall": 0.4,
+      "mrr": 1.0,
+      "ndcg": 0.4703652827859579,
+      "first_relevant_rank": 1,
+      "evidence_found_at": [
+        5,
+        null,
+        null,
+        null,
+        1
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#72",
+          "score": 0.82885,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#71",
+          "score": 0.825114,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#66",
+          "score": 0.811239,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#76",
+          "score": 0.797205,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#17",
+          "score": 0.792423,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#77",
+          "score": 0.785058,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            13
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#219",
+          "score": 0.784971,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            32
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#24",
+          "score": 0.783831,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            8
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#190",
+          "score": 0.776097,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            54
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#184",
+          "score": 0.767549,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q033",
+      "type": "colloquial",
+      "category": "manuals",
+      "question": "motor was sitting in a damp store for months and the megger reading is low, what do I do now?",
+      "hit": 0.0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "first_relevant_rank": null,
+      "evidence_found_at": [
+        null,
+        null,
+        null
+      ],
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#136",
+          "score": 0.680469,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            34
+          ]
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#27",
+          "score": 0.670652,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/baldor_mn431_iom#15",
+          "score": 0.663979,
+          "source": "baldor_mn431_iom.pdf",
+          "pages": [
+            7
+          ]
+        },
+        {
+          "rank": 4,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#65",
+          "score": 0.661401,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            24
+          ]
+        },
+        {
+          "rank": 5,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#19",
+          "score": 0.66014,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 6,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#20",
+          "score": 0.656756,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "rank": 7,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#258",
+          "score": 0.653826,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            72
+          ]
+        },
+        {
+          "rank": 8,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#24",
+          "score": 0.653034,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 9,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#53",
+          "score": 0.651302,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "rank": 10,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#169",
+          "score": 0.651257,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            38
+          ]
+        }
+      ]
+    }
+  ],
+  "unanswerable": [
+    {
+      "id": "q053",
+      "question": "What is the warranty period for Crompton Greaves motors sold in India?",
+      "top1_score": 0.681577,
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/toshiba_lv_induction_motor_iom#11",
+          "score": 0.681577,
+          "source": "toshiba_lv_induction_motor_iom.pdf",
+          "pages": [
+            10
+          ],
+          "text": "The warranty for this motor applies to the motor itself.\nThe warranty for this motor is contained in Toshiba International Corporation's Standard Terms and Conditions of Sale (TIC Standard Warranty) available at https://www.toshiba.com/tic/cms_files/ TCofSale.pdf and shall be the sole warranty unless a different warranty is provided in the applicable contract between the parties (Contract Warranty). If there is a Contract Warranty, that Contract Warranty shall be the sole warranty.\nNo statements in this manual create any new warranties.\nNo statements in this manual modify the terms of the TIC Standard Warranty or any Contract Warranty.\nMisuse and/or modification of your equipment without the express, prior, written consent of Toshiba International Corporation will void all warranties."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#0",
+          "score": 0.668547,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            1,
+            3
+          ],
+          "text": "Installation and maintenance AC electric induction motors\nYour Brook Crompton motor is designed for long life, and low running costs. Careful installation and maintenance will ensure that you achieve reliable operation and optimum efficiency."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/brook_crompton_td103_maintenance#1",
+          "score": 0.66083,
+          "source": "brook_crompton_td103_maintenance.pdf",
+          "pages": [
+            3
+          ],
+          "text": "Handling and lifting of electric motors must only be undertaken by authorised personnel. Full product documentation and operating instructions must be available together with tools and equipment necessary for safe working practice.\nBefore any motor is accepted on site it should be inspected carefully for damage or loss incurred during transit.\nPacking materials may be damaged including sheeting and crate timbers.\nHandling operations may have damaged fan cowls, terminal boxes or auxiliaries.\nWhere an instance of droppage or loss is evident or suspected, it may be necessary to unpack the goods to establish the full extent of the problem.\nWherever possible, damage should be recorded, photographed and witnessed.\nReport any damage to the carriers and Brook Crompton as soon as possible, quoting the motor number and consignment note reference. The insurance company�s agents shown on the insurance certificate should also be advised."
+        }
+      ]
+    },
+    {
+      "id": "q054",
+      "question": "What is the current price of a 15 kW IE3 motor in Delhi?",
+      "top1_score": 0.650891,
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#129",
+          "score": 0.650891,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            12
+          ],
+          "text": "| - |\nEfficiency.IE2.Percent.(11) = 93.7. xviii), Nominal Efficiency.IE3.Percent.(12) = 94.6. xix), Rated Output..kW.(2) = 90.0. xix), Frame Size...(3) = 315M. xix), Full Load Speed Min..Rev/min.(4) = 970. xix), Full Load Current.Max.A.(5) = 175.0. xix), Breakaway Torque in Terms of Full Load Torque.Min.Percent.(6) = 140. xix), Breakaway Current in Terms of Full Load Current (Equal of Below).IE1.Percent.(7) = 650. xix), Breakaway Current in Terms of Full Load Current (Equal of Below).IE2.Percent.(8) = 700. xix), Breakaway Current in Terms of Full Load Current (Equal of"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#146",
+          "score": 0.65075,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            15
+          ],
+          "text": "Amendment No.\nDate of Issue Text Affected\n| - |\n| Central, 1 = : Manak Bhavan, 9 Bahadur Shah Zafar Marg NEW DELHI 110002. Central, 2 = 2323 7617 2323 3841 {. Eastern, 1 = : 1/14, C.I.T. Scheme VII M, V.I.P. Road, Kankurgachi KOLKATA 700054. Eastern, 2 = 2337 8499, 2337 8561 2337 8626, 2337 9120 {. Northern, 1 = : SCO 335-336, Sector 34-A, CHANDIGARH 160022. Northern, 2 = 260 3843 260 9285 {. Southern, 1 = : C.I.T. Campus, IV Cross Road, CHENNAI 600113. Southern, 2 = 2254 1216, 2254 1442 2254 2519, 2254 2315 {{. Western, 1 = : Manakalaya, E9 MIDC, Marol, Andheri (East) MUMBAI 400093. Western, 2 = 2832"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#60",
+          "score": 0.649371,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            10
+          ],
+          "text": "| - |\nEfficiency.IE3.Percent.(12) = 94.0. xvii), Rated Output..kW.(2) = 55.0. xvii), Frame Size...(3) = 250M. xvii), Full Load Speed.Min.Rev/min.(4) = 2 960. xvii), Full Load Current.Max.A.(5) = 95.0. xvii), Breakaway Torque in Terms of Full Load Torque.Min.Percent.(6) = 160. xvii), Breakaway Current in Terms of Full Load Current (Equal of Below).IE1.Percent.(7) = 650. xvii), Breakaway Current in Terms of Full Load Current (Equal of Below).IE2.Percent.(8) = 700. xvii), Breakaway Current in Terms of Full Load Current (Equal of Below).IE3.Percent.(9) = 770. xvii), Nominal"
+        }
+      ]
+    },
+    {
+      "id": "q055",
+      "question": "How do I configure a Danfoss FC302 drive for sensorless vector control?",
+      "top1_score": 0.618239,
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "standards/is_12615_2011_energy_efficient_motors#6",
+          "score": 0.618239,
+          "source": "is_12615_2011_energy_efficient_motors.pdf",
+          "pages": [
+            5
+          ],
+          "text": "It has to be noted that the time lines for mandatory regulations imposed in different countries to set minimum efficiency performance standards (MEPS) for general purpose motors covered under the scope of IEC 60034-30 are not far after the global harmonization of standards. Needless to say, in most of the countries, the MEPS of IE1 are already in place. With the new regulations, after June 2011, most of the major motor markets will be facing the MEPS of IE2. Hence, this standard proposes to specify IE1 motors only when used with variable frequency drives."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/abb_ex_motors_iom_2007#54",
+          "score": 0.613082,
+          "source": "abb_ex_motors_iom_2007.pdf",
+          "pages": [
+            12
+          ],
+          "text": "In case of other voltage source converters (not DTCcontrolled as ACS800) with pulse width modulation type of control (PWM), combined tests are usually needed to confi rm the correct thermal performance of the motor. These tests can be avoided if fl ameproof motors are equipped with thermal sensors intended for control of surface temperatures. Such motors have the following additional markings on the rating plate: - \"PTC\" with the tripping temperature and \"DIN 44081/82\".\nIn the case of voltage source PWM converters with a minimum switching frequency of 3 kHz or higher, instructions provided in Chapter 5.8.3 must be used for preliminary dimensioning.\nFor more information on T5 and T6 temperature class fl ameproof motors used with variable speed drives, please contact ABB."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#101",
+          "score": 0.597894,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            27
+          ],
+          "text": "If the motor has to operate with variable frequency drive (VFD) for the purpose of efficiency, power factor control and other reasons, the operation has to comply with described standard according to NEMA MG1 Section 4 Part 31 and service condition as written on nameplate (voltage, current, frequency range, etc.).\nWhen inverter is used, please conduct additional review on the following items to avoid burnout of motor"
+        }
+      ]
+    },
+    {
+      "id": "q056",
+      "question": "What torque should the cylinder head bolts of a diesel generator be tightened to?",
+      "top1_score": 0.753692,
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#63",
+          "score": 0.753692,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            22
+          ],
+          "text": "The bolted connections with metal contact surfaces, such as end shields, bearing cartridge parts, terminal box parts bolted onto the stator frame, should be tightened to the following dry torques, depending on the thread size:\nThe recommended tightening torques (+/-10%) for bolt and screw connections in English and Metric units are shown in the tables below respectively:"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "manuals/hyosung_nema_lv_motor_om#84",
+          "score": 0.740332,
+          "source": "hyosung_nema_lv_motor_om.pdf",
+          "pages": [
+            22
+          ],
+          "text": "table 6.3 - Tightening torque of terminal block (brass bolt)\n\nM4, Tightening torque (lb-ft) = 0.89~ 0.96. M6, Tightening torque (lb-ft) = 2.21~ 2.44. M8, Tightening torque (lb-ft) = 4.43~ 4.87. M10, Tightening torque (lb-ft) = 7.38~ 8.11. M12, Tightening torque (lb-ft) = 10.33~ 11.37\nIf the motor does not come with a terminal block, first fasten the motor terminal lugs and the power source terminal lugs securely using bolts and nuts to prevent disconnection. After securing them, insulate the cable terminals with an appropriate insulating material that complies with the supply voltage and insulation class specified on the nameplate."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "manuals/siemens_horizontal_induction_motor_iom#61",
+          "score": 0.735528,
+          "source": "siemens_horizontal_induction_motor_iom.pdf",
+          "pages": [
+            21
+          ],
+          "text": "| - |\n SH450, Tightening Torque (+/-10%) = 1940 ft-lbs / 2630 N-m. SH560, Bolt Size = M36. SH560, Tightening Torque (+/-10%) = 1510 ft-lbs / 2047 N-m |"
+        }
+      ]
+    },
+    {
+      "id": "q057",
+      "question": "What is the regreasing interval for a Kirloskar 2-pole 90 kW motor?",
+      "top1_score": 0.696369,
+      "top": [
+        {
+          "rank": 1,
+          "chunk_id": "manuals/abb_lv_motors_iom_2009#66",
+          "score": 0.696369,
+          "source": "abb_lv_motors_iom_2009.pdf",
+          "pages": [
+            15
+          ],
+          "text": "As a guide, adequate lubrication for motors with regreasable bearings can be achieved for the following duration, according to L 1 . For duties with higher ambient temperatures please contact ABB. The formula to change the L 1 values roughly to L 10 values: L 10 = 2.7 x L 1 .\nLubrication intervals for vertical machines are half of the values shown in the table below.\nThe lubrication intervals are based on an ambient temperature +25°C. An increase in the ambient temperature raises the temperature of the bearings correspondingly. The values should be halved for a 15°C increase and may be doubled for a 15°C decrease."
+        },
+        {
+          "rank": 2,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#0",
+          "score": 0.670169,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            1,
+            3,
+            5
+          ],
+          "text": "Bharthari—Nītiśatakam \"Knowledge is such a treasure which cannot be stolen\"\nin\nThis Indian Standard ( Second Revision ) was adopted by the Bureau of Indian Standards, after the draft finalized by the Rotating Machinery Sectional Committee had been approved by the Electrotechnical Division Council.\nThis standard was first published in 1956 and revised in 1965 to incorporate the prevalent practices applicable to motors rated voltage up to 11 kV and having outputs from 60 kW to 250 kW.\n- The second revision incorporates some of the additions like handling and storage of motors, temperature rise, etc. Opportunity has also been utilized to update the references wherever applicable."
+        },
+        {
+          "rank": 3,
+          "chunk_id": "standards/is_900_1992_induction_motor_installation_maintenance#212",
+          "score": 0.667215,
+          "source": "is_900_1992_induction_motor_installation_maintenance.pdf",
+          "pages": [
+            30
+          ],
+          "text": "| - |\nRope(mm).19.Powertransmittedin kW = 5%2. 1070, Diameterof Rope(mm).22.Powertransmittedin kW = 798. 1070, Diameterof Rope(mm).25.Powertransmittedin kW = lcr37. 1070, Diameterof Rope(mm).32.Powertransmittedin kW = 1626. 1070, Diameterof Rope(mm).38.Powertransmittedin kW = 2342. 1070, Diameterof Rope(mm).44.Powertransmittedin kW = 3193. 1070, Diameterof Rope(mm).51.Powertransmittedin kW = 4103. 1220, Diameterof Rope(mm).19.Powertransmittedin kW = 627. 1220, Diameterof Rope(mm).22.Powertransmittedin kW = %80. 1220, Diameterof"
+        }
+      ]
+    }
+  ],
+  "tag": null,
+  "model": "BAAI/bge-small-en-v1.5",
+  "retriever": "dense",
+  "questions_file": "C:\\personal-projects\\StudyRag\\evals\\questions.jsonl",
+  "chunks_file": "C:\\personal-projects\\StudyRag\\data\\processed\\chunks.jsonl",
+  "seconds": 3.16
+}
